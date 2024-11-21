@@ -1843,7 +1843,7 @@ for(let yy=0; yy<=2; yy++){
      case 0:
          lister_table_td_B.innerHTML = '';
          lister_table_td_B.setAttribute('colspan','3')
-        //  lister_table_td_B.appendChild(lister_table_td_B);
+        //  lister_table_td_B.appendChild(lister_table_td_Baaap);
         //  lister_table_td_B.innerHTML = 'aaap';
 
 
