@@ -1,0 +1,71 @@
+ LARAVEL 8 LOGIN SYSTEM
+ 
+ first install in the project directory
+
+ 1- composer create-project laravel/laravel .       with the point to install in the directed project folder ( without if you dont have a project folder yet)
+
+ 2- composer require livewire/livewire
+
+ 3- php artisan make:livewire login
+
+ 4-  composer require laravel/ui
+
+ 5-  php artisan ui bootstrap
+
+ 6- npm install && npm run dev
+
+ 7- npm install (again)
+
+ 8 - php artisan migrate
+
+ 9-php artisan make:livewire components/navbar
+
+
+ 10-   php artisan make:livewire register           ,  home
+
+ 11- npm install --save turbolinks
+
+ .container>.row>.col-md-6  enter to make html element
+
+
+ 12 - php artisan make:middleware checkAuth
+
+ 
+
+PS C:\xampp\htdocs\newLoginSys> require laravel/ui
+require: The term 'require' is not recognized as a name of a cmdlet, function, script file, or executable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+PS C:\xampp\htdocs\newLoginSys> composer require laravel/ui
+
+
+//////////////////////////////////////////////////////////
+
+1. Publish the Pagination Views
+To customize or even just access the default pagination view file, you need to publish Laravel's pagination views to your application's resources/views/vendor/pagination directory. This allows you to modify the pagination views as needed.
+
+Run the following Artisan command:
+
+bash
+Copy code
+php artisan vendor:publish --tag=laravel-pagination
+
+//////////////////////////////////////
+
+///////////////////////// IF else statement laravel
+@if(Route::currentRouteName() === 'orderdata')
+    <p>This is the home page.</p>
+@elseif(Route::currentRouteName() === 'about')
+    <p>This is the about page.</p>
+@else
+    <p>This is another page.</p>
+@endif
+@if ($newdbxdata->total() > $newdbxdata->perPage())
+
+/////////////////////////////////////////////////////////////////
+
+
+migration a single file
+
+php artisan make:migration add_user_data_to_users --table=users
+
+C:\xampp\htdocs\newLoginSysSym\database\migrations\2024_09_15_020354_add_user_data_to_users.php
